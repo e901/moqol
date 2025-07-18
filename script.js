@@ -1,2 +1,6 @@
-// مثال بسيط لإظهار رسالة عند الضغط على زر
-console.log("مرحباً من مقاول بلس - تم تحميل السكربت بنجاح");
+const mobileMenuButton = document.getElementById('mobileMenuButton');
+const mobileMenu = document.getElementById('mobileMenu');
+
+mobileMenuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+});

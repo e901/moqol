@@ -1,16 +1,51 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مقاول بلس | Moqawel Plus</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>مقاول بلس | الصفحة الرئيسية</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body class="bg-gray-50 text-gray-800 overflow-x-hidden">
-    <!-- المحتوى هنا -->
-    <h1 class="text-center text-4xl mt-10 font-bold">مرحباً بك في مقاول بلس</h1>
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2 space-x-reverse">
+                <div class="bg-gradient-to-r from-amber-500 to-amber-600 p-2 rounded-full shadow-lg">
+                    <i class="fas fa-hammer text-white text-xl"></i>
+                </div>
+                <h1 class="text-2xl font-bold">
+                    <span class="text-gray-800">مقاول</span>
+                    <span class="gradient-text">بــلــس</span>
+                </h1>
+            </div>
+            <nav class="hidden lg:flex items-center space-x-8 space-x-reverse">
+                <a href="#" class="hover:text-amber-600 transition">الرئيسية</a>
+                <a href="about.html" class="hover:text-amber-600 transition">من نحن</a>
+                <a href="#" class="hover:text-amber-600 transition">خدماتنا</a>
+                <a href="#" class="hover:text-amber-600 transition">المقاولون</a>
+                <a href="#" class="hover:text-amber-600 transition">تسجيل</a>
+            </nav>
+            <button class="lg:hidden text-gray-800 focus:outline-none" id="mobileMenuButton">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+        <div class="lg:hidden hidden bg-white shadow-lg rounded-b-lg" id="mobileMenu">
+            <div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+                <a href="#">الرئيسية</a>
+                <a href="about.html">من نحن</a>
+                <a href="#">خدماتنا</a>
+                <a href="#">المقاولون</a>
+                <a href="#">تسجيل</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="text-center py-24">
+        <h1 class="text-4xl font-bold">مرحباً بك في <span class="gradient-text">مقاول بلس</span></h1>
+        <p class="text-gray-600 mt-4">منصة تربطك بأفضل المقاولين في السعودية</p>
+    </main>
 
     <script src="script.js"></script>
 </body>

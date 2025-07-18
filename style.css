@@ -4,3 +4,9 @@ body {
     font-family: 'Tajawal', sans-serif;
     scroll-behavior: smooth;
 }
+.gradient-text {
+    background: linear-gradient(45deg, #f59e0b, #ef4444);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
