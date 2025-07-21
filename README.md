@@ -1,7 +1,7 @@
 ---
-title: moqol
+title: hooms
 emoji: 🐳
-colorFrom: purple
+colorFrom: pink
 colorTo: yellow
 sdk: static
 pinned: false
